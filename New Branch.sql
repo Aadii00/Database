@@ -51,7 +51,7 @@ CREATE TABLE Branch (
  CONSTRAINT FK_City_Id FOREIGN KEY (City_Id)
   REFERENCES Location_cities(City_Id)
   )
-drop table Branch	
+	
 
 INSERT [Branch] ([Branch_Id],[City_Id],[Branch_address],[Branch_Manager]) VALUES (1001,2001, 'Dlf Sector18','Saurabh Pant')
 INSERT [Branch] ([Branch_id],[City_Id],[Branch_address],[Branch_Manager]) VALUES (1002,2002,'Mayur Vihar Metro','Pankaj Kumar')
@@ -62,6 +62,7 @@ INSERT [Branch] ([Branch_Id],[City_Id],[Branch_address],[Branch_Manager]) VALUES
 INSERT [Branch] ([Branch_Id],[City_Id],[Branch_address],[Branch_Manager]) VALUES (1007,2001, 'Beta 2 near Omaxe Mall','Rishabh')
 INSERT [Branch] ([Branch_Id],[City_Id],[Branch_address],[Branch_Manager]) VALUES (1008,2004, 'Near Gorakhnath Temple','Aditya')
 
+drop table Branch
 select * from branch
 
 select branch_id,branch_address
